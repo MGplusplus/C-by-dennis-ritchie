@@ -1,0 +1,27 @@
+/* Write a program to determine the ranges of char, short, int, and long variables, both
+   signed and unsigned, by printing appropriate values from standard headers and by
+   direct computation, Harder if you compute them: determine the ranges of the various
+   floating point types. */
+
+
+#include <stdio.h>
+#include <limits.h>
+
+int main()
+{
+	printf("Signed char min = %d\n", SCHAR_MIN );
+	printf("Signed char max = %d\n", SCHAR_MAX );
+	printf("Signed short min = %d\n", SHRT_MIN );
+	printf("Signed short max = %d\n", SHRT_MAX );
+	printf("Signed int min = %d\n", INT_MIN );
+	printf("Signed int max = %d\n", INT_MAX );
+	printf("Signed long min = %ld\n", LONG_MIN );
+	printf("Signed long max = %ld\n", LONG_MAX );
+	//unsigned types
+	printf("Unsigned char max = %u\n", UCHAR_MAX );
+	printf("Unsigned short max = %u\n", USHRT_MAX );
+	printf("Unsigned int max = %u\n", UINT_MAX );
+	printf("Unsigned long max = %lu\n", ULONG_MAX );
+
+	return 0;
+}
